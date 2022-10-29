@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "bringitback",
+  "version": "${version}",
+  "name": "Bringitback",
+  "description": "bring some feature that mojang removed back",
+  "authors": [
+    "ZhuRuoLing"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bringitback/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.zhuruoling.bringitback.client.BringitbackClient"
+    ],
+    "main": [
+      "net.zhuruoling.bringitback.Bringitback"
+    ]
+  },
+  "mixins": [
+    "bringitback.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "minecraft": ">=1.19.1"
+  }
+}
